@@ -326,3 +326,159 @@ function testAutoLockDE() {
 lockDE();
 }
 
+function testLockCarlos() {
+Logger.log('Starting testLockCarlos');
+var sheetName = 'Carlos';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockCarlos');
+}
+
+function testLockDanny() {
+Logger.log('Starting testLockDanny');
+var sheetName = 'Danny';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockDanny');
+}
+
+function testLockDavidM() {
+Logger.log('Starting testLockDavidM');
+var sheetName = 'David M.';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockDavidM');
+}
+
+function testLockDavidP() {
+Logger.log('Starting testLockDavidP');
+var sheetName = 'David P.';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockDavidP');
+}
+
+function testLockJake() {
+Logger.log('Starting testLockJake');
+var sheetName = 'Jake';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockJake');
+}
+
+function testLockJustin() {
+Logger.log('Starting testLockJustin');
+var sheetName = 'Justin';
+var email = 'roni@landobuilders.com';
+
+var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+if (sheet) {
+try {
+Logger.log('Getting range A:C for sheet: ' + sheetName);
+var range = sheet.getRange('A:C');
+Logger.log('Protecting range A:C for sheet: ' + sheetName);
+var protection = range.protect().setDescription('Protected Range A:C');
+Logger.log('Removing editors from range A:C for sheet: ' + sheetName);
+protection.removeEditors(protection.getEditors());
+Logger.log('Adding editor to range A:C for sheet: ' + sheetName);
+protection.addEditor(email);
+Logger.log('Locked A:C for sheet: ' + sheetName);
+} catch (e) {
+Logger.log('Error locking sheet ' + sheetName + ': ' + e.toString());
+}
+} else {
+Logger.log('Sheet not found: ' + sheetName);
+}
+Logger.log('Completed testLockJustin');
+}
+
