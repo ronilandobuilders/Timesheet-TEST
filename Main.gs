@@ -318,3 +318,11 @@ lockDE();
 Logger.log('Completed autoLockDE');
 }
 
+function testAutoLockAC() {
+lockAC();
+}
+
+function testAutoLockDE() {
+lockDE();
+}
+
